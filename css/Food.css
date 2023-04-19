@@ -1,0 +1,626 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background:  #131338;
+    scroll-behavior: smooth;
+}
+:root{
+    --intagram: #962fbf;
+    --facebook: #3b5998;
+    --twitter:#00acee;
+    --youtube:#c4302b;
+}
+
+body{
+    background:  #131338;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ============================ Navigation Start Here ======================== */
+.nav_links{
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding:1rem 0;
+}
+
+.hide_nav_list{
+    position: absolute;
+    right: 0;
+    top: 10rem;
+    height: 500px;
+    width: 400px;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(0px);
+}
+
+.hide_nav_list ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.hide_nav_list ul li{
+    margin-top: 5rem;
+    background-color: #fff;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.hide_nav_list ul li a{
+    text-decoration: none;
+    color: #131338;
+
+}
+
+.hide_nav_list ul li a:hover{
+    border-bottom: 2px solid #030303;
+    transition: 0.0s;
+}
+
+.hamburger_manu{
+    position: relative;
+    height: 30px;
+    width: 35px;
+    display: none;
+}
+
+.hamburger_manu span{
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #ff8c1a;
+}
+
+.hamburger_manu span:first-child{
+    bottom: 1.4rem;
+    height: 3px;
+    width: 60%;
+    background-color:#ff8c1a;
+}
+
+.hamburger_manu span:last-child{
+    bottom: 0.1rem;
+    height: 3px;
+    width: 40%;
+    background-color: #ff8c1a;
+}
+
+
+.logo{
+    color:#ff8c1a;
+}
+.logo h1{
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li:not(:last-child){
+    margin-right: 2rem;
+
+}
+
+ul li{
+    list-style: none;
+    text-decoration: none;
+    align-self: center;
+}
+li a{
+    color: #ffff;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+li a:hover{
+    text-decoration: none;
+    color: #ff8c1a;
+}
+
+/* ============================ Navigation Ends Here ======================== */
+
+/* ============================Main Content Start Here =======================*/
+
+.main_content{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.text_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding:0 2rem ;
+}
+
+.text_content h1{
+    font-size: 4em;
+    font-weight: 700;
+    color: #ff8c1a;
+}
+
+.text_content h4{
+    text-align: left;
+    font-size: 2em;
+    font-weight: 500;
+    color: #fff;
+    padding: 0.7rem 0;
+}
+
+.text_content button{
+    align-self: start;
+    padding: 0.7rem 1rem;
+    background-color: #ff8c1a;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+}
+
+.img_content img{
+    height: 40em;
+    width: 40em;
+}
+
+
+/* ==========================About SECION ============================*/
+
+.About_Sec{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20rem;
+}
+
+.about_text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    cursor: pointer;
+}
+
+.about_text h5{
+    font-weight: 600;
+    color: #ff8c1a;
+}
+
+.about_text h1{
+    font-weight: 700;
+    font-size: 3.5em;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.about_text p{
+    color: #fff;
+}
+
+.about_text button{
+    padding:0.7rem 1rem;
+    color: #fff;
+    background-color: #ff8c1a;
+    border-radius: 2px;
+    border: none;
+}
+
+
+/*=================================Manu Section============================= */
+
+.Manu_sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 14rem;
+}
+
+
+.manu_text{
+    text-align: center;
+}
+.manu_text h5{
+    color: #ff8c1a;
+    font-weight: 500;   
+}
+
+.manu_text h2{
+    color: #fff;
+    font-weight: 800;
+    font-size: 4em;
+}
+
+.manu_img_sec{
+    display: flex;
+    margin-top: 6rem;
+    gap: 5rem;
+    text-align: center;
+    align-items: center;
+}
+
+.first_img
+,.sec_img
+,.third_img{
+    background-color: #ffe6e6;
+    padding: 3rem;
+    border-radius: 3px;
+    height: 350px;
+}
+
+.first_img img
+,.sec_img img
+,.third_img img{
+    background-color: #ffe6e6;
+    height: 250px;
+    width: 250px;
+    margin-top: -3rem;
+}
+
+.third_img img{
+    padding-top:2rem ;
+}
+
+.first_img h3
+,.sec_img h3
+,.third_img h3{
+    background-color: #ffe6e6;
+    color: #131338;
+    font-weight: 700;
+}
+
+.first_img h6
+,.sec_img h6
+,.third_img h6{
+    background-color: #ffe6e6;
+    color: #131338;
+}
+
+.Manu_sec button{
+    padding: 1rem 2rem;
+    background-color: #ff8206;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    margin-top: 4rem;
+}
+
+.Manu_sec button i{
+    background-color: #ff8206;
+}
+/* ====================service========================== */
+.Services_Sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 16rem;
+    color: #fff;
+}
+
+.services_text{
+    padding: 2rem 0;
+}
+
+.services_text h6{
+    color: #ff8c1a;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.services_text h2{
+    font-weight: 700;
+    color: #fff;
+    font-size: 3em;
+}
+
+.services_content{
+    display: flex;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.services_content i{
+    font-size: 4em;
+    color: #ed9945;
+}
+
+.services_content h5{
+    color: #ff8206;
+}
+
+.services_content p{
+    text-align:center;
+    margin-top: 1rem;
+    padding:0 2rem;
+}
+
+/* ========================Meeting Sec==============================*/
+.Meeting_sec{
+    width: 100%;
+    height: 250px;
+    background-color: #ffe6e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20rem;
+    border-radius: 10px;
+}
+
+.Meeting_sec h2{
+    font-weight: 800;
+    font-size: 4em;
+    background-color: #ffe6e6;
+    color: #131338;
+}
+
+.Meeting_sec button{
+    background-color: #ff8206;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+}
+
+/* ========================Footer Section Start Here */
+
+.footer_sec{
+    display: flex;
+    justify-content: center;
+    gap: 16rem;
+    margin-top: 13rem;
+}
+
+.Manu_links h6
+,.Our_Service h6
+,.Information h6{
+    border: none;
+    color: #fff;
+    border-bottom: 2px solid #ff8206;
+    font-size: 1.5rem;
+    padding:1rem 0;
+}
+
+.Manu_links ul li
+,.Our_Service ul li
+,.Information ul li{
+    color: #fff;
+    padding-top:0.6rem ;
+}
+
+.Contact_Us i{
+    font-size:3rem ;
+    transition: 0.5s;
+}
+
+.Contact_Us h5{
+    color: #fff;
+    padding-bottom: 1rem;
+    border-bottom:2px solid #ff8206 ;
+}
+
+.Contact_Us .facebook
+,.instagram
+,.twitter
+,.youtube{
+    color: #fff;
+}
+.facebook:hover{
+    color: var(--facebook);
+}
+.instagram:hover{
+    color: var(--intagram);
+}
+
+.youtube:hover{
+    color: var(--youtube);
+}
+.twitter:hover{
+    color: var(--twitter);
+}
+/* ============================Main Content Ends Here =======================*/
+
+/* ============================ Media Query Online================================= */
+@media screen and (max-width:800px){
+    nav ul{
+        display: none;
+    }
+
+    .hamburger_manu.active+.hide_nav_list{
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(-255px);
+        
+    }
+    
+
+    .hide_nav_list{
+        position: absolute;
+        left: 17rem;
+        background-color: #ff8c1a;
+        transition: 0.5s;
+        transform: translateX(0px);
+    }
+
+    .hide_nav_list ul li{
+        background-color: #ff8c1a;
+        color: #ff8c1a;
+
+    }
+
+    .hide_nav_list ul{
+        background-color: #ff8c1a;
+        color: #ff8c1a;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        
+    }
+
+    .hamburger_manu{
+        display: block;
+        color: #ff8c1a;
+    }
+
+    .hamburger_manu.active>span{
+        width: 100%;
+        margin-top: 1.2rem;
+        transform: rotate(45deg);
+        transition: 0.5s;
+    }
+
+    .hamburger_manu.active>span:first-child{
+       width: 0%;
+       transition: 0.5s;
+    }
+
+    .hamburger_manu.active>span:last-child{
+        width: 100%;
+        transform: rotate(-45deg);
+        margin-bottom: 1.4rem;
+        transition: 0.5s;
+    }
+
+    /* ====Main Content====== */
+    .main_content{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .img_content img{
+        height: 25em;
+        width: 25em;
+        margin-top: 3rem;
+    }
+
+    
+    .text_content h1{
+      letter-spacing: 2px;
+      font-size: 2.5em;
+      font-weight: 700;
+      color: #ff8c1a;
+    }
+
+    .text_content h4{
+       text-align: center;
+       font-size: 1.4em;
+       font-weight: 500;
+       color: #fff;
+       padding: 1rem 0;
+    }
+
+    .text_content button{
+      align-self: center;
+      padding: 0.7rem 1rem;
+      background-color: #ff8c1a;
+      color: #fff;
+      border: none;
+      border-radius: 2px;
+   }
+
+   /*====================== About Section========================= */
+
+   
+.About_Sec{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_text{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.about_text h5{
+    font-weight: 600;
+    color: #ff8c1a;
+}
+
+.about_text h1{
+    font-weight: 700;
+    font-size: 3.5em;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.about_text p{
+    color: #fff;
+    padding: 0.7rem 1rem;
+}
+
+.about_text button{
+    padding:0.7rem 1rem;
+    color: #fff;
+    background-color: #ff8c1a;
+    border-radius: 2px;
+    border: none;
+}
+
+.about_img img{
+    height: 350px;
+    width: 350px;
+    margin-top: 6rem;
+}
+
+.Manu_sec{
+    display: flex;
+    flex-direction: column;
+}
+
+.manu_img_sec{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========================Fotter============================ */
+
+.footer_sec{
+   flex-direction: column;
+   
+}
+
+.Manu_links{
+    height: 200px;
+    width: 200px;
+    margin-bottom: -14rem;
+}
+    
+.Our_Service
+,.Information
+,.Contact_Us{
+    height: 200px;
+    width: 200px;
+    margin-bottom: -14rem;
+}
+    
+}
+/* ============================ Media Query Off Here================================= */
+
+
+/* ====================JAVA SCRIPT LOGIC================== */
+
